@@ -1,10 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <title>Board</title>
 </head>
 <body>
-$END$
+<!--<div style="width: 100%; height: 100%; position: relative; background: white">
+    <div style="width: 143px; height: 94px; padding-left: 5px; padding-right: 5px; padding-top: 3px; padding-bottom: 3px; left: 221px; top: 74px; position: absolute; background: #D9D9D9; border-radius: 5px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 4px; display: inline-flex">
+        <div style="width: 132.71px; flex: 1 1 0; color: black; font-size: 9px; font-family: Inter; font-weight: 400; word-wrap: break-word">надпись<br/></div>
+        <div style="width: 125.51px; flex: 1 1 0; color: black; font-size: 7px; font-family: Inter; font-weight: 400; word-wrap: break-word">00.00.00 00:00</div>
+    </div>
+    <div style="width: 143px; padding-left: 4px; padding-right: 4px; padding-top: 11px; padding-bottom: 11px; left: 221px; top: 22px; position: absolute; background: #D9D9D9; border-radius: 14px; overflow: hidden; justify-content: center; align-items: center; gap: 50px; display: inline-flex">
+        <div style="color: black; font-size: 12px; font-family: Inter; font-weight: 400; word-wrap: break-word">очередь</div>
+        <div style="flex: 1 1 0; height: 6px; justify-content: flex-end; align-items: center; gap: 4px; display: flex">
+            <div style="width: 5.66px; height: 6px; background: #787878; border-radius: 9999px"></div>
+            <div style="width: 5.66px; height: 6px; background: #787878; border-radius: 9999px"></div>
+            <div style="width: 5.66px; height: 6px; background: #787878; border-radius: 9999px"></div>
+        </div>
+    </div>
+    <div style="width: 143px; padding-left: 4px; padding-right: 4px; padding-top: 11px; padding-bottom: 11px; left: 391px; top: 22px; position: absolute; background: #D9D9D9; border-radius: 14px; overflow: hidden; justify-content: center; align-items: center; gap: 50px; display: inline-flex">
+        <div style="color: black; font-size: 12px; font-family: Inter; font-weight: 400; word-wrap: break-word">очередь</div>
+        <div style="flex: 1 1 0; height: 6px; justify-content: flex-end; align-items: center; gap: 4px; display: flex">
+            <div style="width: 5.66px; height: 6px; background: #787878; border-radius: 9999px"></div>
+            <div style="width: 5.66px; height: 6px; background: #787878; border-radius: 9999px"></div>
+            <div style="width: 5.66px; height: 6px; background: #787878; border-radius: 9999px"></div>
+        </div>
+    </div>
+    <div style="width: 143px; padding-left: 4px; padding-right: 4px; padding-top: 11px; padding-bottom: 11px; left: 561px; top: 22px; position: absolute; background: #D9D9D9; border-radius: 14px; overflow: hidden; justify-content: center; align-items: center; gap: 50px; display: inline-flex">
+        <div style="color: black; font-size: 12px; font-family: Inter; font-weight: 400; word-wrap: break-word">очередь</div>
+        <div style="flex: 1 1 0; height: 6px; justify-content: flex-end; align-items: center; gap: 4px; display: flex">
+            <div style="width: 5.66px; height: 6px; background: #787878; border-radius: 9999px"></div>
+            <div style="width: 5.66px; height: 6px; background: #787878; border-radius: 9999px"></div>
+            <div style="width: 5.66px; height: 6px; background: #787878; border-radius: 9999px"></div>
+        </div>
+    </div>
+    <div style="width: 195px; height: 481px; left: 0px; top: 0px; position: absolute; background: #787878"></div>
+</div>-->
+<!--<div th:text="${cards}"></div>-->
+<div th:each="card : ${cards}}">
+
+</div>
 </body>
 </html>
